@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html>
-  <body style="margin:0; background:black;">
-    <img src="Wine_Bottle_GIF_Video_Generated.gif" style="width:100vw; height:100vh; object-fit:cover;" />
-    <script>
-      setTimeout(() => {
-        location.href = "https://restaurant-merlot.ro//meniu.html";
-      }, 8000);
-    </script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Intro</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* clean scaling */
+    }
+  </style>
+</head>
+<body>
+  <img
+    src="Wine_Bottle_GIF_Video_Generated.gif"
+    alt="Restaurant Intro"
+    id="introGif"
+  />
+
+  <script>
+    // Replace with actual duration of the GIF in milliseconds
+    const gifDuration = 8000;
+
+    setTimeout(() => {
+      window.location.href = "https://restaurant-merlot.ro/meniu.html";
+    }, gifDuration);
+  </script>
+</body>
 </html>
